@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from nacho.views import ProductosTemplateView
+from tiendalibre.views import ProductosTemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
