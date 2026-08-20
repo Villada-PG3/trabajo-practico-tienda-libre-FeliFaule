@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Acerca de mí</title>
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block title %}Acerca de mí - Tienda Libre{% endblock %}
+
+{% block content %}
+
+<div class="text-center">
 
     <h1>Acerca de mí</h1>
 
-    <p>
+    <p class="lead">
         Hola, soy Felipe Faule, estudiante de programación.
     </p>
 
     <p>
-        Actualmente estoy aprendiendo desarrollo web con Django y creando
-        un ecommerce como proyecto para Programación III.
+        Actualmente estoy aprendiendo desarrollo web con Django
+        y desarrollando este ecommerce para Programación III.
     </p>
 
     <p>
-        En este proyecto trabajé con modelos, vistas, templates y base de datos
-        para crear una tienda funcional.
+        En este proyecto estoy trabajando con modelos, vistas,
+        templates y bases de datos.
     </p>
 
-    <a href="/">Volver al inicio</a>
+</div>
 
-</body>
-</html>
+{% endblock %}

@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Tienda Libre</title>
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block title %}Inicio - Tienda Libre{% endblock %}
 
-    <h1>Bienvenido a Tienda Libre</h1>
+{% block content %}
 
-    <p>
-        Bienvenido a mi tienda online. En este proyecto estoy desarrollando un ecommerce
-        utilizando Django, donde los usuarios podrán ver diferentes productos.
+<div class="text-center">
+
+    <h1 class="display-4">Bienvenido a Tienda Libre 🛒</h1>
+
+    <p class="lead">
+        Bienvenido a mi tienda online desarrollada con Django.
     </p>
 
-    <a href="/productos/">Ver productos</a>
-    <br>
-    <a href="/acerca-de-mi/">Acerca de mí</a>
+    <a href="/productos/" class="btn btn-primary">
+        Ver productos
+    </a>
 
-</body>
-</html>
+</div>
+
+{% endblock %}
